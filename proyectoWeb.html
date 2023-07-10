@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yadrinks</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/proyectoWeb.css">
+  <link rel = "icon" href="./img/ico.png">
+</head>
+
+<body>
+
+  <nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-purple fixed-top">
+
+      <div class="container">
+        <!-- Logo -->
+        <img src="./img/no.png" width="160" height="70">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+          aria-controls="nabarS" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarS">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#productos" class="nav-link">Productos</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#recetas" class="nav-link">Recetas</a>
+            </li>
+            
+            <!-- 
+              <li class="nav-item">
+              <a href="#contactos" class="nav-link">Contactos</a>
+            </li>
+            <li class="nav-search">
+              <input id="search-input" type="text" class="form-control rounded-pill blue-bg" placeholder="Buscar">
+            </li>
+            <li class="nav-boton">
+              <button id="search-button" class="btn btn-purple rounded-pill">Buscar</button>
+            </li> -->
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+
+
+    <div id="presentacion" class="pres slide bg-black vh-100" data-bs-ride="pres">
+      <div class="container">
+
+
+        <div id="text-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col text-center">
+                  <p class="fs-4" style="margin-top: 8rem;">Pagina Web diseñado para la creación y preparación
+                    de<br> los mas famosos y conocido "DRINKS" para los diferentes gustos,<br> estilos, sabores, colores
+                    y presentaciones conoce toda nuestra amplia<br> variedad de recetas y productos, navega por nuestro
+                    extenso<br> catálogo y disfruta aprendiendo</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col text-center">
+                  <p class=" fs-4" style="margin-top: 8rem;">"La coctelería evoluciona constantemente, <br> las
+                    creaciones son cada vez más <br>extravagantes y complejas pero,<br>al final del día, el sabor y la
+                    presentación<br>es lo que enamora a los consumidores."</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col text-center">
+                  <p class=" fs-4" style="margin-top: 8rem;">Si te gusta el mundo de la bebidas,drinks o
+                    coctelería <br>y quieres
+                    formarte en él, primero deberías saber sus orígenes<br> y de donde procede todo aquello que hoy
+                    conocemos
+                    como “Drinks”.<br> Por ello, en este artículo vas a conocer los <br> ingredientes a ocupar y su
+                    misma preparacion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#text-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#text-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="row mb-4 " style="margin-top: 50px;">
+          <div class="col-md-4">
+            <img src="./img/blue.jpg" alt="Imagen 1" class="img-fluid" style="width: 300px; height: 200px;">
+          </div>
+          <div class="col-md-4">
+            <img src="./img/morado.jpeg" alt="Imagen 2" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+            <img src="./img/coco.png" alt="Imagen 3" class="img-fluid" style="width: 300px; height: 200px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="productos" class="pres slide bg-image vh-100"
+      style="background-image: url('./img/fondo.jpeg'); background-size: cover; background-position: center;"
+      data-bs-ride="pres">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-5" style="margin-bottom: 20px; color: white; margin-top: 10px;">
+            <h2>PRODUCTOS</h2>
+          </div>
+        </div>
+        <div class="container" style="margin-top: 120px;">
+          <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-center align-items-center" style="margin-bottom: -50px;">
+                  <div class="col-md-4 text-center">
+                    <img src="./img/verde.jpeg" alt="Imagen 1" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <img src="./img/corona.jpeg" alt="Imagen 2" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <img src="./img/julio.jpg" alt="Imagen 3" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center align-items-center" style="margin-bottom: -50px;">
+                  <div class="col-md-4 text-center">
+                    <img src="./img/victoria.jpg" alt="Imagen 1" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <img src="./img/moet.jpg" alt="Imagen 2" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <img src="./img/voodka.jpg" alt="Imagen 3" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center align-items-center" style="margin-bottom: -50px;">
+                  <div class="col-md-4 text-center">
+                    <img src="./img/kitty.jpg" alt="Imagen 1" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <img src="./img/roto.jpg" alt="Imagen 2" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <img src="./img/mich.jpg" alt="Imagen 3" class="rounded-circle img-fluid my-4"
+                      style="width: 200px; height: 200px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="recetas" class="pres slide bg-black" data-bs-ride="pres">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>RECETAS</h2>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-4 text-center">
+            <img src="./img/1.jpeg" alt="Imagen 1" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-1">
+          </div>
+
+          <!-- Modal para la imagen 1 -->
+          <div class="modal fade" id="modal-imagen-1" tabindex="-1" aria-labelledby="modal-imagen-1-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">CUBA LIBRE</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cubal.jpg" alt="Coche" style="width:70%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">Es otra de las bebidas con ron más sencillas
+                    y rápidas de preparar. A diferencia del mojito, el color del cuba libre es marrón oscuro,
+                    a pesar de que se prepara con ron blanco. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>100 mililitros de ron blanco</li>
+                    <li>200 mililitros de refresco de cola</li>
+                    <li>200 mililitros de jugo de lima</li>
+                    <li>Un limón</li>
+                    <li>Hielo triturado</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Coloca el hielo en un vaso grande de vidrio.</li>
+                    <li>Luego añade el ron, el refresco de cola y el jugo de lima.</li>
+                    <li>Mezcla todos los ingredientes</li>
+                    <li>decora con las rodajas de limón en el borde del vaso.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img src="./img/2.jpeg" alt="Imagen 2" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-2">
+          </div>
+
+          <!-- Modal para la imagen 2 -->
+          <div class="modal fade" id="modal-imagen-2" tabindex="-1" aria-labelledby="modal-imagen-2-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-2-label">Cóctel sunset oaxaqueño con mezcal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/mmezcal.png" alt="Coche" style="width:50%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">El fuerte sabor del mezcal, es delicioso si lo
+                    mezclas con jugos cítricos, hierbas aromáticas, especias y hasta lácteos combinan perfectamente
+                    con mezcal. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>1/3 de taza de granadina</li>
+                    <li>Mezcal al gusto</li>
+                    <li>1/2 taza de jugo de naranja</li>
+                    <li>Rodajas de naranja</li>
+                    <li>Agua mineral</li>
+                    <li>Hielos</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Coloca el hielo en un vaso largo de vidrio.</li>
+                    <li>Agrega la granadina, el jugo de naranja y la cantidad de mezcal que desees, mezcla bien con una
+                      cuchara</li>
+                    <li>Rellena el vaso con agua mineral</li>
+                    <li>Decora con las rodajas de naranja</li>
+                    <li>Disfruta !!</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img src="./img/3.jpeg" alt="Imagen 3" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-3">
+          </div>
+
+          <!-- Modal para la imagen 3 -->
+          <div class="modal fade" id="modal-imagen-3" tabindex="-1" aria-labelledby="modal-imagen-3-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-2-label">Margarita Laguna Azul</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/azul.png" alt="Coche" style="width:50%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">El cóctel Margarita Laguna Azul es una
+                    de las variaciones del clásico Margarita, que nos invita a disfrutar la combinación de un
+                    buen tequila, con jugos frutales y un toque de soda con sabor lima-limón. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>1 ½ onza de tequila</li>
+                    <li>¾ onzas de curazao azul</li>
+                    <li>½ onza de jugo de piña</li>
+                    <li>1 rodaja de limón</li>
+                    <li>½ onza de refresco de limón</li>
+                    <li>Hielo en cubos</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Llena la coctelera con hielo y añade el tequila, el curazao azul y el jugo de piña.</li>
+                    <li>Exprime la rodaja de limón y agita durante 20 segundos.</li>
+                    <li>Cuela en el vaso de margaritas e incorpora la soda de lima-limón. </li>
+                    <li>¡Sirve y disfruta!</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-4 text-center">
+            <img src="./img/4.jpeg" alt="Imagen 4" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-4">
+          </div>
+
+          <!-- Modal para la imagen 4 -->
+          <div class="modal fade" id="modal-imagen-4" tabindex="-1" aria-labelledby="modal-imagen-4-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">Paloma con tequila</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/paloma.png" alt="Coche" style="width:70%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">La paloma es un cóctel bastante simple de
+                    preparar que satisface a la mayoría de los paladares por su agradable sabor y bajo contenido
+                    de alcohol. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>2 onzas de tequila</li>
+                    <li>1/2 onza de jugo de limón recién exprimido</li>
+                    <li>4 onzas de refresco de toronja (Squirt / Fresca / Jarritos)</li>
+                    <li>Hielo</li>
+                    <li>Opcional: Sal para escarchar el vaso.</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Si deseas que el vaso tenga sal en la orilla (escarchado), entonces este debería ser el
+                      primer paso. Coloca un poco de sal en un pequeño plato, usando una rodaja de limón humedece
+                      el borde del vaso y luego pasa la orilla húmeda por la sal.</li>
+                    <li>Llena el vaso con hielo, agrega el tequila y el jugo de limón.</li>
+                    <li>Añade ahora el refresco de toronja y disfruta.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img src="./img/5.jpeg" alt="Imagen 5" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-5">
+          </div>
+
+          <!-- Modal para la imagen 5 -->
+          <div class="modal fade" id="modal-imagen-5" tabindex="-1" aria-labelledby="modal-imagen-5-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">Coco Cremoso</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/coco.png" alt="Coche" style="width:70%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">Para los amantes de los cocteles con coco
+                    llega esta deliciosa mezcla de aguardiente con coco que te sosprenderá gracias a su cremosidad. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>1 leche condensada</li>
+                    <li>1 taza de aguardiente</li>
+                    <li>1 coco picado</li>
+                    <li>1/2 taza de leche líquida</li>
+                    <li>Canela en polvo</li>
+                    <li>Hielo</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Colocar dentro del vaso de una licuadora el hielo junto con el coco picado,
+                      el aguardiente, la leche condensada y la leche líquida</li>
+                    <li>Licuar durante unos minutos para poder mezclar bien los ingredientes</li>
+                    <li>Servir en un vaso estilo Old Fashioned</li>
+                    <li>Decorar con la canela en polvo</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img src="./img/6.jpeg" alt="Imagen 6" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-6">
+          </div>
+
+          <!-- Modal para la imagen 6 -->
+          <div class="modal fade" id="modal-imagen-6" tabindex="-1" aria-labelledby="modal-imagen-6-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">Michelada Picante</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/habanero.jpg" alt="Coche" style="width:50%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">Esta michelada es ideal para los amantes del
+                    picante, no te puedes perder la combinación de salsas y Kermato®. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>2 limones, en rebanadas delgadas</li>
+                    <li>1/4 tazas de chile en polvo</li>
+                    <li>1/4 tazas de jugo de limón</li>
+                    <li>2 cucharadas de salsa de habanero</li>
+                    <li>2 cucharadas de salsa picante</li>
+                    <li>2 cucharadas de salsa picante, negra</li>
+                    <li>1 taza de Kermato®</li>
+                    <li>1 cerveza clara</li>
+                    <li>Suficiente de naranja, rebanada</li>
+                    <li>Suficiente de chile serrano, cortado a la mitad</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Para escarchar el tarro, pasa el tarro por un plato con cama de limones y después pásalo
+                      sobre un plato con chile en polvo cubriendo bien toda la parte superior del tarro.</li>
+                    <li>Vierte en el tarro la salsa habanera, salsa picante, salsa picante negra y el jugo de limón.
+                    </li>
+                    <li>Agrega a la mezcla anterior el Kermato®.</li>
+                    <li>Agrega poco a poco la cerveza con el tarro inclinado para no generar espuma.</li>
+                    <li>Decora tu tarro con un palillo con el chile serrano a la mitad y una rebanada de naranja.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-4 text-center">
+            <img src="./img/7.jpeg" alt="Imagen 7" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-7">
+          </div>
+
+          <!-- Modal para la imagen 7 -->
+          <div class="modal fade" id="modal-imagen-7" tabindex="-1" aria-labelledby="modal-imagen-7-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">Mojito</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/mojito.jpg" alt="Coche" style="width:70%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">El mojito​es un cóctel popular originario de Cuba,
+                    compuesto de ron, limón, azúcar, menta o eucalipto y agua mineral.​​ La combinación de sabor dulce,
+                    cítrico, y menta complementa el sabor del ron, y hace del mojito una bebida popular de verano.​​
+                  </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>16 hojas de menta o hierbabuena</li>
+                    <li>1 oz de jugo de limón</li>
+                    <li>1 cucharada de azúcar</li>
+                    <li>cantidad suficiente de hielo</li>
+                    <li>2 oz de ron blanco</li>
+                    <li>½ oz de jarabe natural</li>
+                    <li>cantidad suficiente de agua mineral</li>
+                    <li>1 twist de limón</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Coloque en el vaso old fashioned la mitad de las hojas de menta o hierbabuena,
+                      el jugo de limón y el azúcar, macháquelos ligeramente con la mano de mortero.</li>
+                    <li>Agregue hielos, el ron blanco, el jarabe natural y las hojas de menta restantes;
+                      mezcle muy bien con ayuda de la cuchara bailarina. Termine de llenar el vaso con
+                      el agua mineral.</li>
+                    <li>Decore el mojito con el twist de limón.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img src="./img/8.jpeg" alt="Imagen 8" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-8">
+          </div>
+
+          <!-- Modal para la imagen 8 -->
+          <div class="modal fade" id="modal-imagen-8" tabindex="-1" aria-labelledby="modal-imagen-8-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">Sandia con Vodka</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/sandi.jpg" alt="Coche" style="width:50%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">¡Cóctel de sandía rellena! Otro trago con un
+                    vaso-fruta
+                    muy original, ¡porque aquí no se desperdicia nada! Esta bebida divertida, fresca y con un toque muy
+                    tropical, mantendrá cualquier celebración muy divertida. Asómbrate de lo fácil que resulta
+                    prepararla
+                    y lo magnifica que luce, uno de los tragos con vodka más refrescantes del mundo coctelero. ¡Un
+                    cóctel para
+                    que alardees de tu creatividad! </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>1 refresco de limón</li>
+                    <li>1 limón</li>
+                    <li>1 sandía mediana</li>
+                    <li>300 ml de vodka</li>
+                    <li>0.5 tang de fresa</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Primero prepara la sandía, pues te servirá de recipiente. Corta uno de los extremos
+                      pero sin excederte, así servirá de base, luego corta el otro extremo, lo suficiente
+                      para verter luego los ingredientes dentro de el.</li>
+                    <li>Retira una pequeña parte de la pulpa y reserva, el resto déjalo dentro de la sandía
+                      y tritúralo con una batidora manual (hazlo con cuidado para no dañar la cascara de la fruta).</li>
+                    <li>Cuando el centro de la sandía sea zumo, es el momento de agregar el resto de los ingredientes,
+                      uno a uno. Recuerda, puedes cambiar las cantidades de cada ingrediente al gusto y… ¡a disfrutar!
+                    </li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="./img/9.jpeg" alt="Imagen 9" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-9">
+          </div>
+          <!-- Modal para la imagen 9 -->
+          <div class="modal fade" id="modal-imagen-9" tabindex="-1" aria-labelledby="modal-imagen-9-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">Licores para Barra</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/barra.jpg" alt="Coche" style="width:70%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">Piensa en lo que te gusta beber y haz la barra a
+                    tu estilo, gusto y presupuesto individual. Siempre puedes agregar más opciones a medida que
+                    descubras
+                    nuevas recetas de cócteles o encuentras algo nuevo que quieras probar. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">Bar Básico:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>750ml Ron</li>
+                    <li>750ml Vodka</li>
+                    <li>750ml Gin</li>
+                    <li>750ml Tequila</li>
+                    <li>2x750ml Vino tinto</li>
+                    <li>Cerveza</li>
+                    <li>2x750ml Vino Blanco</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">Bar Intermedio:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>750ml Ron</li>
+                    <li>750ml Vodka</li>
+                    <li>750ml Gin</li>
+                    <li>750ml Tequila</li>
+                    <li>750ml Whisky</li>
+                    <li>750ml Bourbon</li>
+                    <li>750ml Scotch</li>
+                    <li>750ml Brandy</li>
+                    <li>Vino espumoso o champagne</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="./img/10.jpeg" alt="Imagen 10" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-10">
+          </div>
+          <!-- Modal para la imagen 10 -->
+          <div class="modal fade" id="modal-imagen-10" tabindex="-1" aria-labelledby="modal-imagen-10-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">Cordial de Naranja</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cordiales.jpg" alt="Coche" style="width:70%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">Sabroso cordial con sabor a naranja, ideal bebida
+                    alcohólica, cócteles y ponches. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Pieles de naranja</li>
+                    <li>Azúcar y agua en partes iguales</li>
+                    <li>Vodka (igual proporción que el almíbar)</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Poner en el fuego pieles de naranja y partes iguales de azúcar y de agua durante 5 minutos o
+                      hasta romper hervor.</li>
+                    <li>Dejar enfriar; luego agregar vodka (u otro destilado) en la misma proporción que el almíbar.
+                    </li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="./img/11.jpeg" alt="Imagen 11" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-11">
+          </div>
+          <!-- Modal para la imagen 11 -->
+          <div class="modal fade" id="modal-imagen-11" tabindex="-1" aria-labelledby="modal-imagen-11-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">Moet (Licor para regalar)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/moet.jpg" alt="Coche" style="width:70%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">Moët Chandon Brut Imperial es un Champagne francés
+                    elaborado por la reconocida bodega de la región de champagne Moët Chandon con una coupage de uvas de
+                    las variedades Chardonay, Pinot Meunier y Pinot Noir bajo la Denominación de Origen AOC Champagne.
+                  </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">Caracteristicas:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>UVAS: Este champagne es el resultado de una coupage de uvas especialmente seleccionadas de las
+                      variedades Pinot Noir, Chardonnay y Pinot Meunier procedentes de cosechas diferentes.</li>
+                    <li>VISTA: Color dorado con reflejos de tono amarillo pálido repleto de finas burbujas.</li>
+                    <li>AROMA: En nariz, resulta muy expresivo repleto de notas a frutas de hueso
+                      (albaricoques y melocotones) combinados con matices a florales.</li>
+                    <li>GUSTO: En boca, se confirman las notas a frutas que ya percibimos en fase olfativa
+                      junto con ligeros matices a repostería muy agradables.</li>
+                    <li>SERVICIO: Se recomienda su servicio bien frío, a temperaturas alrededor de los 8ºC y 10 ºC.</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="./img/12.jpeg" alt="Imagen 12" style="width: 200px; height: 250px;" data-bs-toggle="modal"
+              data-bs-target="#modal-imagen-12">
+          </div>
+          <!-- Modal para la imagen 12 -->
+          <div class="modal fade" id="modal-imagen-12" tabindex="-1" aria-labelledby="modal-imagen-12-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="modal-imagen-1-label">TEQUILA TOREADOR CON LICOR DE CACAO</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/gour.jpg" alt="Coche" style="width:50%" class="mx-auto d-block">
+                  <p class="text-dark fs-6" style="margin-top: 1rem;">Tequila Toreador, delicioso trago que
+                    combina lo fuerte del tequila y el dulzor de la crema y del cacao. </p>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">INGREDIENTES:</h5>
+                  </div>
+                  <ul class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>30 cc de tequila</li>
+                    <li>30 cc de licor de cacao</li>
+                    <li>30 cc de crema de leche</li>
+                    <li>5 cubos de hielo</li>
+                    <li>1 cda de Chocolate Dulce en Polvo Gourmet</li>
+                  </ul>
+                  <div class="col text-center">
+                    <h5 class="text-dark fs-6">PREPARACIÓN:</h5>
+                  </div>
+                  <ol start="1" class="text-dark fs-6" style="margin-top: 1rem;">
+                    <li>Colocar en una juguera el tequila, la crema de leche, el licor de cacao y los cubos de
+                      hielo. Licuar por 1 minuto o hasta que todo quede bien mezclado.</li>
+                    <li>Servir en una copa de cocktail y espolvorear con el Chocolate Dulce en Polvo Gourmet
+                      sobre el trago.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contacto -->
+          <div id="contactos" class="pres slide "
+            style="background-image: url('./img/contactos.jpeg'); background-size: cover; background-position: center;"
+            data-bs-ride="pres">
+
+            <div class="container">
+              <div class="row mt-4">
+                <div class="col text-center">
+                  <h2>Contactanos</h2>
+                  <p class="text-muted-dark fs-5">Estamos para servirte</p>
+                </div>
+              </div>
+              <div class="row mt-4 justify-content-center">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <a href="https://www.facebook.com" target="_blank">
+                        <img src="./img/fa.png" width="60" height="60">
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="https://www.instagram.com" target="_blank">
+                        <img src="./img/insta.png" width="60" height="60">
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="https://www.twitter.com" target="_blank">
+                        <img src="./img/tu.png" width="60" height="60">
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="https://www.youtube.com" target="_blank">
+                        <img src="./img/you.png" width="60" height="60">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <img src="https://clipground.com/images/ubicacion-png-8.png" width="60" height="60">
+                    </div>
+                    <div class="col-md-8">
+                      <p>Las Yadrinks, S.A. de C.V.
+                        Preparados de Alta Calidad Km. 341.5 Carretera San Martin-Oaxaca, Zona Industrial C.P. 94690 San
+                        Martin, Ver.; México</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <img src="./img/tel.png" width="60" height="60">
+                    </div>
+                    <div class="col-md-8">
+                      <p>Tel: +52 (271) 714 0400<br>
+                        Fax: +52 (271) 714 1770</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col text-center">
+                  <p>© AB INBEV 2022<br>
+                    Corona recomienda el consumo responsable. Alc 4,5% Vol. GMODELO EUROPA. Todos los derechos
+                    reservados.<br>
+                    No compartas este contenido con personas que no tengan la edad legal para consumir alcohol.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('.navbar');
+      if (window.pageYOffset > 100) { // Cambia 100 por el número de píxeles desde la parte superior en la que deseas ocultar la barra
+        navbar.classList.remove('fixed-top');
+      } else {
+        navbar.classList.add('fixed-top');
+      }
+    });
+  </script>
+</body>
+
+</html>
